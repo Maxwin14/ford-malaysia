@@ -1,65 +1,66 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <main>
+      
+      {/* HERO SECTION */}
+      <section className="bg-blue-900 min-h-screen flex items-center justify-center px-6">
+  <div className="max-w-3xl mx-auto text-center">
+    <p className="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-4">
+      Malaysia's #1 Pickup Specialist
+    </p>
+    <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+      Built Tough. Priced Smart. <br/> Built For Malaysia.
+    </h1>
+    <p className="text-blue-100 text-lg mb-10">
+      Think Ford is expensive? Think again...
+    </p>
+    <div className="flex gap-4 justify-center">
+      <button className="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-100">
+        Compare Models
+      </button>
+      <button className="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900">
+        Calculate My Loan →
+      </button>
     </div>
+  </div>
+</section>
+
+     {/* MYTH BUSTING SECTION */}
+<section className="bg-gray-50 py-20 px-6">
+  
+  <div className="max-w-5xl mx-auto text-center">
+    
+    <h2 className="text-3xl font-bold mb-10">
+      Let's Bust Some Myths
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div className="bg-white rounded-2xl shadow-md p-6 text-left">
+        <span className="text-red-500 font-bold text-sm">❌ Myth</span>
+        <p className="font-bold mt-2">"Ford is more expensive than Hilux"</p>
+        <span className="text-green-600 font-bold text-sm mt-4 block">✅ Truth</span>
+        <p className="text-gray-600 mt-1">Base Ranger is actually priced lower than base Hilux. More features, smarter price.</p>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-md p-6 text-left">
+        <span className="text-red-500 font-bold text-sm">❌ Myth</span>
+        <p className="font-bold mt-2">"Diesel is too expensive now"</p>
+        <span className="text-green-600 font-bold text-sm mt-4 block">✅ Truth</span>
+        <p className="text-gray-600 mt-1">At RM2.15/litre with 5.8L/100km efficiency, your cost per km beats most SUVs.</p>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-md p-6 text-left">
+        <span className="text-blue-500 font-bold text-sm">💪 Fact</span>
+        <p className="font-bold mt-2">Military-grade high-strength steel body</p>
+        <span className="text-green-600 font-bold text-sm mt-4 block">✅ Why it matters</span>
+        <p className="text-gray-600 mt-1">Stronger in crashes. Tougher off-road. Lasts longer. Your investment is protected.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
   );
 }
+
